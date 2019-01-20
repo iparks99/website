@@ -8,7 +8,8 @@
 				<link rel="stylesheet" type="text/css" href="styles.css">
 				<!-- Add icon library -->
 				<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-				<script type="text/javascript" src="main.js"></script>
+				<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+				<script type="text/javascript" src="slideshow.js"></script>
 		</head>
 
 		<div id="topnav">
@@ -19,47 +20,33 @@
 		</div>
 
 		<!-- Body -->
-		<body onload="plusSlides(0);">
+		<body>
 				<h1>Some Projects I've Made</h1>
 				<h2>Video Game Animation Project</h2>
 				<p>
 						The following slideshow displays a project I made in my senior year of high school, in the spring of 2017. I made this project in Java to test my abilities to use graphics and perform animations. This was my most ambitious project, but I hope to create even more impressive ones in the near future. Visit the <a href="downloads.html">download</a> page to check it out!
 				</p>
 				<!-- Slideshow -->
-				<div class="slideshow-container">
-						<div class="mySlides fade">
-								<div class="numbertext">1 / 3</div>
-								<img src="Images/AnimationTestScreenshot1.jpg" style="width:100%">
-								<div class="text">A view of a project I made</div>
-						</div>
-
-						<div class="mySlides fade">
-								<div class="numbertext">2 / 3</div>
-								<img src="Images/AnimationTestScreenshot2.jpg" style="width:100%">
-								<div class="text">A close up of the main character</div>
-						</div>
-
-						<div class="mySlides fade">
-								<div class="numbertext">3 / 3</div>
-								<img src="Images/AnimationTestScreenshot3.jpg" style="width:100%">
-								<div class="text">Showing a majority of the map</div>
-						</div>
-
-						<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-						<a class="next" onclick="plusSlides(1)">&#10095;</a>
-				</div>
-				<br>
-
-				<!-- Slideshow dots -->
-				<div style="text-align:center">
-						<span class="dot" onclick="currentSlide(1)"></span> 
-						<span class="dot" onclick="currentSlide(2)"></span> 
-						<span class="dot" onclick="currentSlide(3)"></span> 
+				<div id="slideshow">
+					<div>
+						<img src="Images/AnimationTestScreenshot1.jpg" />
+					</div>
+					<div>
+						<img src="Images/AnimationTestScreenshot2.jpg" />
+					</div>
+					<div>
+						<img src="Images/AnimationTestScreenshot3.jpg" />
+					</div>
 				</div>
 
 				<h2>Projects from Freshman Year</h2>
 				<p>
 						In my freshman year of college, I made many projects for my object-oriented programming classes (No pun intended). I learned about ADT's and made projects related to Maps, LinkedLists, Stacks, Queues, PriorityQueues, BinarySearchTrees, and Graphs. In addition, I learned about multi-threading and sorting algorithms. I learned about algorithmic complexity and how to find it for algorithms. Lastly, I learned TeX for beautifully formatted documents.
+				</p>
+
+				<h2>Projects from Sophomore Year</h2>
+				<p>
+					In my sophomore year of college, I learned about the importance of memory management with C, as well as basic low-level MIPS Assembly programming.
 				</p>
 
 				<h2>Work With the FDA</h2>
@@ -70,9 +57,15 @@
 				<h2>Top-Down Block Shooter</h2>
 				<p>
 						This was a quick little game I made to test my capabilities in Java with graphics and math. It is a fun game, and try to see how far you can get!
-						<img src="Images/TopDown1.PNG">
-						<img src="Images/TopDown2.PNG">
 				</p>
+				<div id="slideshow">
+					<div>
+						<img src="Images/TopDown1.PNG">
+					</div>
+					<div>
+						<img src="Images/TopDown2.PNG">
+					</div>
+				</div>
 
 				<h2>Breakout-Style Game</h2>
 				<p>
