@@ -1,0 +1,20 @@
+body {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+#slideshow {
+	max-width: 1000px;
+	min-width: 1000px;
+	height: auto;
+	position: relative;
+	margin: 0 auto;
+	margin-bottom: 800px;
+}
+
+.slide {
+	max-width: inherit;
+	min-width: inherit;
+	height: inherit;
+	position: absolute;
+}
