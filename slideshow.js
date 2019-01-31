@@ -5,12 +5,12 @@ document.head.appendChild(jQueryScript);
 // Only executes once the DOM is fully loaded.
 $(document).ready(function () {
 	// Hides every slideshow's images except for its first image.
-	$("div[id='slideshow']").each(function(index) {
+	$("div[class='slides']").each(function(index) {
 		$(this).children("div:gt(0)").hide();
 	});
 
 	setInterval(function() {
-		$("div[id='slideshow']").each(function(index) {
+		$("div[class='slides']").each(function(index) {
 			$(this).children("div:first")
 				.fadeOut(1000)
 				.next()

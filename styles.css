@@ -16,27 +16,33 @@
 	margin-bottom: 60%;
 }
 
-#slideshow > div {
+.slides {
+  max-width: inherit;
+  position: relative;
+}
+
+.slide {
 	max-width: inherit;
 	position: absolute;
 }
 
-#slideshow > div > .top-left {
+.slide > .top-left {
   position: absolute;
   top: 8px;
   left: 16px;
   color: white;
 }
 
-#slideshow > div > .caption {
+.slide > .caption {
   position: absolute;
   bottom: 8px;
   left: 50%;
+  text-align: center;
   transform: translate(-50%, -50%);
   color: white;
 }
 
-#slideshow > div > img {
+.slide > img {
 	max-width: inherit;
   margin-left: auto;
   margin-right: auto;
