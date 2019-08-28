@@ -97,6 +97,10 @@ footer {
 }
 p {
     text-indent: 40px;
+    font-size: 1.5em;
+}
+li {
+    font-size: 1.5em;
 }
 img {
     display: block;
